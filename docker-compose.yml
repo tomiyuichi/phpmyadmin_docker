@@ -1,0 +1,12 @@
+services:
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    environment:
+      PMA_HOST: 172.19.0.1
+      PMA_USER: root
+      PMA_PASSWORD: no_1_Bulbasaur  
+    ports:
+      - "8080:80"
+
+volumes:
+  db_data:
